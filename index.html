@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PDF Form Test (All fields should be editable)</title>
+    <style type="text/css">
+      html, body, iframe {
+        display: block;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+      }
+
+      iframe {
+        height: 80%;
+        width: 100%;
+        display: block;
+      }
+      p {
+        width: 100%;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <strong>Issues</strong>
+      <br>
+      <ul>
+        <li>Drop down only works with keyboard</li>
+        <li>Drop down doesnt keep selected value</li>
+        <li>Checkbox doesnt support keyboard to toggle</li>
+        <li>Some fields write gibberish instead of text: e.g. 'Bewegung', 'Zusätzlich' </li>
+      </ul>
+    </p>
+    <iframe src="pdf-sample.pdf" frameborder="0" seamless="1"></iframe>
+  </body>
+</html>
